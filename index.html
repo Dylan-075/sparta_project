@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- В <head> вашего HTML -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/index.html" class="header__brand">
+                <p class="header__logo" ><span class="header__brand--red">SPARTA</span></p>
+                <p class="header__logo" >KARATE TEAM</p>
+            </a>
+            <nav class="header__nav">
+                <a href="#aboutus__link">О нас</a>
+                <a href="#info__link">Блог</a>
+                <a href="#contact__link">Связь</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="redLine">
+
+    </section>
+    <section class="info">
+        <div class="info__container">
+            <div class="info__content">
+                <h1 class="info__title">
+                    КАРАТЭ КЛУБ <span class="info__title--red">СПАРТА</span>
+                </h1>
+                <p class="info__subtitle">
+                    в г. Ростов-на-Дону
+                </p>
+                <div class="info__actions">
+                    <button class="info__btn" onclick="location.href='#contact__link'">
+                        Стать частью секты
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="infoSection__aboutus" id="aboutus__link">
+        <div class="infoSection--aboutus__content">
+            О нас
+        </div>
+    </section>
+    <section class="aboutus">
+        <div class="aboutus__container">
+            <div class="aboutus__content">
+                <h1 class="aboutus__title">
+                    Спарта
+                </h1>
+                <p class="aboutus__subtitle">
+                СК&nbsp;«Спарта»&nbsp;— школа чемпионов, основанная в 2004 году. За годы работы клуб подготовил 7 мастеров спорта, призёров международных турниров, чемпионатов России и всероссийских соревнований. 
+                Здесь воспитывают не только физическую силу и технику, но и дух настоящих бойцов.
+                </p>
+                <p class="aboutus__subtitle">
+                Наш клуб&nbsp;— это традиции, дисциплина и путь к победам, где каждый спортсмен может раскрыть свой потенциал под руководством опытных тренеров. Клуб объединяет перспективных и амбициозных атлетов, 
+                которые представляют регион на всероссийском и международном уровнях. Активное участие в соревнованиях и высокие достижения воспитанников способствуют популяризации спорта и формированию сильного имиджа клуба на спортивной арене России.    
+                </p>
+                <p class="aboutus__subtitle">
+                Мы в смысле че за ебучие тренера, чемпионов бля делаем. Сами тоже чемпами были бы, правда не фортануло немного
+                </p>
+                <p class="aboutus__subtitle">
+                Ну и это, сайт есть, значит бабок больше платить надо. Я думаю 10 штук за 2 недели нормальный прайс. Кто не согласен - пиздуйте к лащенову тренироваться и кравцову!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="infoSection__news" id="info__link">
+        <div class="infoSection--news__content">
+            Блог
+        </div>
+    </section>
+    
+    <section class="news">
+        <section class="news__container">
+            <h1 class="news__title">
+                    Галерея
+                </h1>
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-color: blue;">
+                    <img src="media/swiper/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide" style="background-color: red;">
+                    <img src="media/swiper/6.jpg" alt="">
+                </div>
+                <div class="swiper-slide" style="background-color: green;">
+                    <img src="media/swiper/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide" style="background-color: purple;">
+                    <img src="media/swiper/6.jpg" alt="">
+                </div>
+                <div class="swiper-slide" style="background-color: black;">
+                    <img src="media/swiper/3.jpg" alt="">
+                </div>
+                <div class="swiper-slide" style="background-color: yellow;">
+                    <img src="media/swiper/6.jpg" alt="">
+                </div>
+            </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+            
+        </section>
+    </section>
+
+    <section class="infoSection__contact" id="contact__link">
+        <div class="infoSection--contact__content">
+            Связь
+        </div>
+    </section>
+
+    <section class="contact" >
+        <section class="contact__container">
+            <h2 class="contact__title">
+                Обратная связь
+            </h2>
+
+            <form action="#contact__form__link" class="contact__form">
+
+                <div class="contact__fields--grid">
+                <div class="contact__field">
+                    <input placeholder="Имя родителя" type="text" id="nameOfParent" name="nameOfParent" class="contact__input" required>
+                </div>
+
+                <div class="contact__field">
+                    <input placeholder="Имя ребенка" type="text" id="nameOfChild" name="nameOfChild" class="contact__input" required>
+                </div>
+
+                <div class="contact__field">
+                    <input placeholder="Возраст ребенка" type="number" min="0" id="age" name="age" class="contact__input" required>
+                </div>
+                
+
+                <div class="contact__field">
+                    <input placeholder="Номер телефона" type="tel" id="number" name="number" class="contact__input" required>
+                </div>
+
+                <div class="contact__field">
+                    <input placeholder="Как с Вами связаться?" type="text" id="howContact" name="howContact" class="contact__input" required>
+                </div> 
+
+                <button type="submit" class="contact__button" onclick="location.href='#contact__form__link'">Связаться</button>
+                </div>
+
+
+            </form>
+        </section>
+    </section>
+
+    <section class="redLine">
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__top">
+                <div class="footer__grid">
+                    <div class="footer__brand">
+                        <img src="media/logo/sp 1.svg" class="footer__logo">
+                    </div>
+
+                    <nav class="footer__nav">
+                        <h3>Навигация</h3>
+                        <a href="#" class="footer__a">Главная</a>
+                        <a href="#aboutus__link" class="footer__a">О нас</a>
+                        <a href="#info__link" class="footer__a">Блог</a>
+                        <a href="#contact__link" class="footer__a">Связь</a>
+                    </nav>
+
+                    <div class="footer__contacts">
+                        <h3>Связь</h3>
+                        <p>+7 (928) 116-98-33</p>
+                        <p>+7 (928) 270-15-60</p>
+                        <p>+7 (918) 557-41-06</p>
+                    </div>
+
+                    <div class="footer__addresses">
+                        <h3>Адреса</h3>
+                        <p>Творческая 5</p>
+                        <p>Лицей 102</p>
+                        <p>Пацаева 666</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                © 2026 Company. Все права защищены.
+            </div>
+
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
