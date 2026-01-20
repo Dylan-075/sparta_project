@@ -1,3 +1,18 @@
+fetch('partials/header.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+  })
+  .catch(err => console.error('Ошибка загрузки header:', err));
+
+fetch('partials/footer.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('footer').innerHTML = html;
+  })
+  .catch(err => console.error('Ошибка загрузки footer:', err));
+
+
 const swiper = new Swiper('.swiper', {
   loop: false,
   slidesPerView: 1,

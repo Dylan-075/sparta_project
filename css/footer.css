@@ -1,0 +1,57 @@
+.footer__container{
+    width: 100%;
+    /* max-width: 1320px; */
+    margin: 0 auto;
+    padding: 0 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 0;
+    background-color: #2A2B26;
+}
+
+.footer{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.footer__top{
+    padding: 15px;
+}
+
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.footer__brand,
+.footer__nav,
+.footer__contacts,
+.footer__addresses{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.footer__contacts p,
+.footer__addresses p{
+margin: 0;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__nav a {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none; /* убирает подчеркивание */
+    background-color: transparent; /* убирает фон */
+    border: none; /* убирает рамки */
+    outline: none; /* убирает обводку при фокусе */
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font: inherit; /* наследует шрифт */
+}
+
+

@@ -9,53 +9,7 @@ body {
   /* overflow-x: hidden; */
 }
 
-/*HEADER START*/
 
-.header{
-    font-family: 'Inter';
-    font-style: normal;
-}
-
-
-.header__container{
-    background-color: #2A2B26;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}   
-
-.header__brand{
-    align-items: center;
-    justify-items: center;
-    text-decoration: none;
-}
-
-.header__logo{
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none; /* убирает подчеркивание */
-    background-color: transparent; /* убирает фон */
-    border: none; /* убирает рамки */
-    outline: none; /* убирает обводку при фокусе */
-    cursor: pointer;
-    margin: 0;
-    font: inherit; /* наследует шрифт */
-}
-.header__nav a{
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none; /* убирает подчеркивание */
-    background-color: transparent; /* убирает фон */
-    border: none; /* убирает рамки */
-    outline: none; /* убирает обводку при фокусе */
-    cursor: pointer;
-    padding: 30px;
-    margin: 0;
-    font: inherit; /* наследует шрифт */
-    font-size: 30px;
-}
-
-
-/*HEADER END*/
 
 .redLine{
     background-color: red;
@@ -129,8 +83,7 @@ body {
     align-items: center;
 }
 
-.info__title--red,
-.header__brand--red{
+.info__title--red{
     display: inline;
     color: #ff0000;
 }
@@ -191,8 +144,7 @@ body {
 }
 
 .aboutus__container,
-.contact__container,
-.footer__container{
+.contact__container{
     width: 100%;
     /* max-width: 1320px; */
     margin: 0 auto;
@@ -338,7 +290,7 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
-    border-radius: 3px;
+    border-radius: 1px;
     cursor: pointer;
 
     text-align: center;         /* горизонтальное выравнивание */
@@ -350,55 +302,3 @@ body {
 
 /*FORM END*/
 
-/*FOOTER START*/
-
-.footer{
-    font-family: 'Inter';
-    font-style: normal;
-}
-
-.footer__top{
-    padding: 15px;
-}
-
-.footer__container{
-    padding: 0;
-    background-color: #2A2B26;
-}
-
-.footer__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-}
-
-.footer__brand,
-.footer__nav,
-.footer__contacts,
-.footer__addresses{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    color: #FFFFFF;
-}
-
-.footer__contacts p,
-.footer__addresses p{
-margin: 0;
-color: rgba(255, 255, 255, 0.3);
-}
-
-.footer__nav a {
-    color: rgba(255, 255, 255, 0.3);
-    text-decoration: none; /* убирает подчеркивание */
-    background-color: transparent; /* убирает фон */
-    border: none; /* убирает рамки */
-    outline: none; /* убирает обводку при фокусе */
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    font: inherit; /* наследует шрифт */
-}
-
-/*FOOTER END*/

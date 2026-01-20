@@ -3,7 +3,11 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -12,30 +16,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- В <head> вашего HTML -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    
-<link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <a href="/index.html" class="header__brand">
-                <p class="header__logo" ><span class="header__brand--red">SPARTA</span></p>
-                <p class="header__logo" >KARATE TEAM</p>
-            </a>
-            <nav class="header__nav">
-                <a href="#aboutus__link">О нас</a>
-                <a href="#info__link">Блог</a>
-                <a href="#contact__link">Связь</a>
-            </nav>
-
-        </div>
-    </header>
+    <div id="header"></div>
+    <main>
 
     <section class="redLine">
 
@@ -47,7 +36,7 @@
                     КАРАТЭ КЛУБ <span class="info__title--red">СПАРТА</span>
                 </h1>
                 <p class="info__subtitle">
-                    в г. Ростов-на-Дону
+                    в Ростове-на-Дону
                 </p>
                 <div class="info__actions">
                     <button class="info__btn" onclick="location.href='#contact__link'">
@@ -182,46 +171,8 @@
     <section class="redLine">
 
     </section>
-
-    <footer class="footer">
-        <div class="footer__container">
-
-            <div class="footer__top">
-                <div class="footer__grid">
-                    <div class="footer__brand">
-                        <img src="media/logo/sp 1.svg" class="footer__logo">
-                    </div>
-
-                    <nav class="footer__nav">
-                        <h3>Навигация</h3>
-                        <a href="#" class="footer__a">Главная</a>
-                        <a href="#aboutus__link" class="footer__a">О нас</a>
-                        <a href="#info__link" class="footer__a">Блог</a>
-                        <a href="#contact__link" class="footer__a">Связь</a>
-                    </nav>
-
-                    <div class="footer__contacts">
-                        <h3>Связь</h3>
-                        <p>+7 (928) 116-98-33</p>
-                        <p>+7 (928) 270-15-60</p>
-                        <p>+7 (918) 557-41-06</p>
-                    </div>
-
-                    <div class="footer__addresses">
-                        <h3>Адреса</h3>
-                        <p>Творческая 5</p>
-                        <p>Лицей 102</p>
-                        <p>Пацаева 666</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                © 2026 Company. Все права защищены.
-            </div>
-
-        </div>
-    </footer>
+    </main>
+    <div id="footer"></div>
 
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
