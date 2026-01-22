@@ -1,0 +1,86 @@
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ .coaches{
+    font-family: 'Inter';
+    font-style: normal;
+    width: 100%;
+    /* display: flex; */
+    /* position: relative; */
+ }
+
+ .coaches__container{
+    width: 100%;
+    /* max-width: 1320px; */
+    margin: 0 auto;
+    padding: 0 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 20px;
+ }
+
+ .coach{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 40px;
+    height: 500px;
+    /* align-items: center; */
+ }
+
+ .coach__media img{
+    width: 100%;
+    /* border-radius: 16px;   */
+    object-fit: cover;
+    height: 500px;
+ }
+
+ .coach__content{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+ }
+ .coaches__title{
+    margin: 0;
+ }
+
+.coaches__title h1{
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+}
+
+.coach__name{
+    font-size: 40px;
+margin-bottom: 0;
+}
+
+.coach__role{
+margin-top: 0;
+}
+
+/* Настройка отдельных изображений */
+
+.coach__img--1{
+    object-position: center 20%;
+}
+
+.coach__img--2{
+    object-position: center top;
+}
+
+.coach__img--3{
+    object-position: right bottom;
+}
+
+.coach__img--4{
+    object-position: center bottom;
+}
+
+.coach__img--5{
+    object-position: center bottom;
+}
