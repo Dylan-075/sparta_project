@@ -438,18 +438,18 @@ body {
 }
 
 @media (max-width:576px ){
+.infoSection__aboutus,
+.infoSection__news,
+.infoSection__contact{
+    height: auto;
+}
 
-/* .aboutus__container,
- .contact__container{
-    padding: 0 20px;
- } */
-
-/* 
-.news__container,
-.info__container{
- margin-left: 20px;
- padding-right: 10px;
-} */
+.infoSection--aboutus__content,
+.infoSection--contact__content,
+.infoSection--news__content{
+    margin-top: 30px;
+    /* height: 40px; */
+}
 
 .info{
     height: 400px;

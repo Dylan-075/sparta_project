@@ -84,3 +84,86 @@ margin-top: 0;
 .coach__img--5{
     object-position: center bottom;
 }
+
+/* MOBILE START */
+
+@media (max-width:1280px){
+    .aboutpage h4,
+    .coaches__container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width:992px){
+     .coach__media img{
+    height: 300px;
+ }
+
+ 
+ .coach{
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    height: 300px;
+    /* align-items: center; */
+ }
+.coaches__title{
+    padding-top: 30px;
+}
+
+ .coaches__title h1{
+    font-size: 50px;
+ }
+
+ .coach__name{
+    font-size: 30px;
+ }
+}
+
+@media (max-width:768px){
+    .coaches__container{
+        padding: 0 50px;
+        padding-bottom: 15px;
+    }
+
+    .coach{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 500px;
+        gap: 15px;
+        height: auto;
+    }
+
+    .coach__media img{
+    height: 500px;
+    }
+
+    .coach__name{
+        margin-top: 5px;
+    }
+    .item2{
+        order: -1;
+    }
+
+}
+
+@media (max-width:576px){
+    .coaches__container{
+        padding: 0 25px;
+        padding-bottom: 15px;
+    }
+    .coach{
+        grid-template-rows: auto 400px;
+    }
+    .coach__media img{
+        height: 400px;
+    }
+    .aboutpage h4{
+        font-size: 12px;
+        padding-left: 25px;
+    }
+    .coaches__title h1{
+        font-size: 37px;
+    }
+}
+
+/* MOBILE END */
