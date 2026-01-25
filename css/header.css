@@ -34,6 +34,10 @@
     margin: 0;
     font: inherit; /* наследует шрифт */
 }
+.header__nav{
+    display: flex;
+}
+
 .header__nav a{
     color: rgba(255, 255, 255, 1);
     text-decoration: none; /* убирает подчеркивание */
@@ -47,5 +51,63 @@
     font-size: 20px;
 }
 
+.burger{
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: poinetr;
+}
 
 /*HEADER END*/
+
+/* MOBILE HEADER START */
+
+@media (max-width:768px){
+.header__brand{
+    font-size: 12px;
+}
+.header__container{
+    padding: 15px 20px;
+}
+  .burger{
+    display: block;
+    z-index: 100;
+    position: relative;
+  }  
+
+.header__nav {
+    z-index: 100;
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    width: 100%;
+    background: rgba(42, 43, 38, 0.8);;
+
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: 0.3s;
+  }
+
+  .header__nav a {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Когда меню открыто */
+  .header__nav.active {
+    max-height: 400px;
+    gap: 30px;
+    margin-top: 6px;
+  }
+
+}
+
+/* MOBILE HEADER END */

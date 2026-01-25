@@ -2,6 +2,20 @@ fetch('partials/header.html')
   .then(response => response.text())
   .then(html => {
     document.getElementById('header').innerHTML = html;
+
+    // ✅ Инициализация бургера ПОСЛЕ загрузки header
+    const burger = document.querySelector('#burger');
+    const nav = document.querySelector('#header__nav');
+
+    if (!burger || !nav) {
+      console.error('Burger или nav не найден');
+      return;
+    }
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      console.log('Клик работает');
+    });
   })
   .catch(err => console.error('Ошибка загрузки header:', err));
 
@@ -34,29 +48,29 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-const form = document.getElementById('contactForm');
+// const form = document.getElementById('contactForm');
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
+// form.addEventListener('submit', async (e) => {
+//   e.preventDefault();
 
-  const formData = new FormData(form);
+//   const formData = new FormData(form);
 
-  try {
-    const response = await fetch('API_URL_ЗДЕСЬ', {
-      method: 'POST',
-      body: formData
-    });
+//   try {
+//     const response = await fetch('API_URL_ЗДЕСЬ', {
+//       method: 'POST',
+//       body: formData
+//     });
 
-    if (response.ok) {
-      alert('Заявка отправлена!');
-      form.reset();
-    } else {
-      alert('Ошибка отправки');
-    }
-  } catch (error) {
-    alert('Ошибка сети');
-  }
-});
+//     if (response.ok) {
+//       alert('Заявка отправлена!');
+//       form.reset();
+//     } else {
+//       alert('Ошибка отправки');
+//     }
+//   } catch (error) {
+//     alert('Ошибка сети');
+//   }
+// });
 
 
 

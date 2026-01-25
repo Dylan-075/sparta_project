@@ -54,4 +54,11 @@ color: rgba(255, 255, 255, 0.3);
     font: inherit; /* наследует шрифт */
 }
 
+@media (max-width:768px){
+    .footer__grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    
+}
 
+}

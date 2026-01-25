@@ -1,0 +1,34 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.redLine{
+    background-color: red;
+    width: 100%;
+    height: 3px;
+}
+
+.aboutpage{
+    width: 100%;
+    height: auto;
+    /* background-color: grey; */
+}
+
+.aboutpage h4{
+    color: rgba(42, 43, 38, 0.5);
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.aboutpage--red{
+    display: inline;
+    color: #ff0000;
+}
+
+body {
+  margin: 0;
+  display: block;
+  flex-direction: column;
+  /* overflow-x: hidden; */
+}

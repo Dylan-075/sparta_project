@@ -1,0 +1,92 @@
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ .news{
+    font-family: 'Inter';
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* position: relative; */
+ }
+.news__container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+ .news__title{
+    margin: 0;
+ }
+
+.news__title h1{
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+}
+
+ .news__item{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    height: 600px;
+    padding: 0 100px;
+}
+
+.img__wrapper{
+    display: flex;
+    height: 600px;
+}
+
+.img__wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.img__wrapper {
+  position: relative;
+  /* width: 300px; */
+  overflow: hidden;
+}
+
+.img__wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding-left: 40px;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /* justify-content: top; */
+  flex-direction: column;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ВАЖНО: hover на родителе */
+.img__wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay__text{
+
+}
