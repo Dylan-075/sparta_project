@@ -66,19 +66,19 @@ margin-top: 0;
 /* Настройка отдельных изображений */
 
 .coach__img--1{
-    object-position: center 20%;
+    object-position: center bottom;
 }
 
 .coach__img--2{
-    object-position: center top;
+    object-position: center center;
 }
 
 .coach__img--3{
-    object-position: right bottom;
+    object-position: center top;
 }
 
 .coach__img--4{
-    object-position: center bottom;
+    object-position: center center;
 }
 
 .coach__img--5{
@@ -160,6 +160,7 @@ margin-top: 0;
     .aboutpage h4{
         font-size: 12px;
         padding-left: 25px;
+        padding-top: 25px;
     }
     .coaches__title h1{
         font-size: 37px;
