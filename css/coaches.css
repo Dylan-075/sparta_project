@@ -85,6 +85,10 @@ margin-top: 0;
     object-position: center bottom;
 }
 
+.coach__description{
+    font-size: 30px;
+}
+
 /* MOBILE START */
 
 @media (max-width:1280px){
@@ -93,6 +97,10 @@ margin-top: 0;
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .coach__description{
+    font-size: 20px;
+}
 }
 
 @media (max-width:992px){
@@ -118,6 +126,12 @@ margin-top: 0;
  .coach__name{
     font-size: 30px;
  }
+ .coach__role{
+    font-size: 12px;
+ }
+ .coach__description{
+    font-size: 15px;
+}
 }
 
 @media (max-width:768px){
@@ -143,6 +157,9 @@ margin-top: 0;
     .item2{
         order: -1;
     }
+.coach__description{
+    font-size: 20px;
+}
 
 }
 
@@ -165,6 +182,13 @@ margin-top: 0;
     .coaches__title h1{
         font-size: 37px;
     }
+ .coach__role{
+    font-size: 14px;
+ }
+    
+    .coach__description{
+    font-size: 25px;
+}
 }
 
 /* MOBILE END */
