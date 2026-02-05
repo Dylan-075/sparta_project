@@ -153,11 +153,17 @@
                 
 
                 <div class="contact__field">
-                    <input placeholder="Номер телефона" type="tel" id="number" name="number" class="contact__input" required>
+                    <input placeholder="Номер телефона" pattern="\+7\s?\(\d{3}\)\s?\d{3}-\d{2}-\d{2}" type="tel" id="number" name="number" class="contact__input" required>
                 </div>
 
                 <div class="contact__field">
-                    <input placeholder="Как с Вами связаться?" type="text" id="howContact" name="howContact" class="contact__input" required>
+                    <select name="howContact" required>
+                        <option value="">Как с вами связаться?</option>
+                        <option value="tel">Звонок</option>
+                        <option value="TG">Telegram</option>
+                        <option value="WA">Whatsapp</option>
+                    </select>
+                    <!-- <input placeholder="Как с Вами связаться?" type="text" id="howContact" name="howContact" class="contact__input" required> -->
                 </div> 
 
                 <button type="submit" class="contact__button" onclick="location.href='#contact__form__link'">Связаться</button>
